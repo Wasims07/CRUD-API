@@ -1,14 +1,38 @@
 # CRUD-API
-This project demonstrates the implementation of basic CRUD (Create, Read, Update, Delete) operations using Spring Boot as the backend framework and PostgreSQL as the database.
+
+This project is a simple Student Management API built using Java, Spring Boot, and PostgreSQL. It provides basic CRUD (Create, Read, Update, Delete) operations for managing student records. The API can be tested using Postman.
 
 ## Table of Contents
 
+- [Project Structure](#project-structure)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [API Endpoints](#api-endpoints)
-- [Testing with Postman](#testing-with-postman)
-- [Contributing](#contributing)
-- [License](#license)
+
+## Project Structure
+
+```
+├── src/
+│ ├── main/
+│ │ ├── java/com/example/springs/
+│ │ │ ├── controller/
+│ │ │ │└── HomeController.java               // Controller for handling HTTP requests
+│ │ │ ├── entity/
+│ │ │ │ └── Student.java                     // Entity class representing the Student model
+│ │ │ ├── repository/
+│ │ │ │└── StudentRepository.java            // Repository interface for database operations
+│ │ │ └── CrudOperationApplication.java      // Main application class to bootstrap Spring Boot
+│ │ └── resources/
+│ │ └── application.properties               // Configuration file for database and other settings
+│ └── test/
+│ └── java/com/example/springs/
+│ └── CrudOperationApplicationTests.java     // Unit tests for the application
+├── target/                                  // Compiled classes and build artifacts
+├── HELP.md                                  // Help file for Maven
+├── mvnw                                     // Maven wrapper script for Unix-based systems
+├── mvnw.cmd                                 // Maven wrapper script for Windows
+└── pom.xml                                  // Maven configuration file for dependencies and build settings
+```
 
 ## Features
 
